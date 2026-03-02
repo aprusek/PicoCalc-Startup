@@ -80,4 +80,4 @@ AUTO.BAS runs B:\AUTO\MENU
 |------|----------|---------|
 | `FLASH.BAS` | Flash slot 1 | Minimal autorun hook; calls AUTO.BAS |
 | `AUTO.BAS` | `B:\AUTO\AUTO.BAS` | Environment setup and menu launcher |
-| `MENU` | `B:\AUTO\MENU` | Main interactive menu |
+| `MENU.BAS` | `B:\AUTO\MENU` | Main interactive menu |
