@@ -1,11 +1,12 @@
-
-OPTION CASE UPPER
+REM AUTO.BAS
 
 DRIVE "B:"
 CHDIR "\AUTO"
 
-PLAY WAV "Picocalc.wav"
+REM Splash Screen and Startup Sound
+
 LOAD PNG "Pico_Math.PNG"
+PLAY WAV "Picocalc.wav"
 
 REM Neopixels
 
