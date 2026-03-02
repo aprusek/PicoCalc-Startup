@@ -5,7 +5,7 @@ DRIVE "B:"
 CHDIR "\AUTO"
 
 PLAY WAV "Picocalc.wav"
-LOAD IMAGE "wb4.bmp"
+LOAD PNG "Pico_Math.PNG"
 
 REM Neopixels
 
