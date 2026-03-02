@@ -1,0 +1,11 @@
+' Startup code
+
+OPTION AUTORUN 1
+
+PRINT "MMBASIC: "; MM.VER
+PRINT "Running: FLASH 1"
+PRINT "Launching: B:\AUTO\AUTO.BAS"
+
+DRIVE "B:"
+CHDIR "\AUTO"
+RUN "B:\AUTO\AUTO.BAS"
