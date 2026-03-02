@@ -6,10 +6,11 @@ This document describes the two-stage autorun startup system used on this Picoca
 
 ## Overview
 
-Startup uses a two-stage approach:
+Startup uses a three-stage approach:
 
 1. **FLASH.BAS** — a minimal hook file stored in flash memory that runs automatically at boot
 2. **AUTO.BAS** — the main environment setup script stored on the SD card (`B:\AUTO\AUTO.BAS`)
+3. **MENU.BAS** — A menu of programs in the \BASIC directory (`B:\AUTO\MENU.BAS`)
 
 ---
 
@@ -49,6 +50,28 @@ Located at `B:\AUTO\AUTO.BAS`, this script handles all environment configuration
 - Changes the current directory to `B:\BASIC`
 - Launches the menu by running `B:\AUTO\MENU`
 
+---
+## Stage 3: MENU.BAS (Menu of Programs)
+
+Located at `B:\AUTO\MENU.BAS`, this script rendersthe following menu:
+
+---
+
+Basic Programs Menu   Page: 1 of 3
+────────────────────────────────────────
+1             ADVENT.BAS
+2             BANNER.BAS
+3             CALENDAR.BAS
+4             CHESS.BAS
+5             ELIZA.BAS
+6             GAMES.BAS
+7             HELLO.BAS
+8             LIFE.BAS
+9             LUNAR.BAS
+
+0            Next Page     ---->
+────────────────────────────────────────
+Select Program #? _
 ---
 
 ## Boot Sequence
