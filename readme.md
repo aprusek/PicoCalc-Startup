@@ -60,7 +60,7 @@ Power On
 MMBASIC starts
    │
    ▼
-OPTION AUTORUN 1 → runs FLASH.BAS (Flash slot 1)
+Program stored in FLASH 1 is run (FLASH.BAS)
    │
    ▼
 FLASH.BAS calls B:\AUTO\AUTO.BAS
@@ -76,8 +76,8 @@ AUTO.BAS runs B:\AUTO\MENU
 
 ## File Summary
 
-| File | Location | Purpose |
-|------|----------|---------|
-| `FLASH.BAS` | Flash slot 1 | Minimal autorun hook; calls AUTO.BAS |
-| `AUTO.BAS` | `B:\AUTO\AUTO.BAS` | Environment setup and menu launcher |
-| `MENU.BAS` | `B:\AUTO\MENU` | Main interactive menu |
+| File        | Location           | Purpose                              |
+|-------------|--------------------|--------------------------------------|
+| `FLASH.BAS` | Flash slot 1       | Minimal autorun hook; calls AUTO.BAS |
+| `AUTO.BAS`  | `B:\AUTO\AUTO.BAS` | Environment setup and menu launcher  |
+| `MENU.BAS`  | `B:\AUTO\MENU`     | Main interactive menu                |
