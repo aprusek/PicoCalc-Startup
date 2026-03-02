@@ -57,8 +57,6 @@ Located at `B:\AUTO\MENU.BAS`, this script provides an interactive paginated men
 | `SEL`    | Calculated array index of selected file |
 
 ### Sample Output
-
-**Page 1 of 3**
 ```
 Basic Programs Menu   Page: 1 of 3
 ────────────────────────────────────────
