@@ -55,7 +55,24 @@ Located at `B:\AUTO\AUTO.BAS`, this script handles all environment configuration
 
 Located at `B:\AUTO\MENU.BAS`, this script rendersthe following menu:
 
----
+```
+Basic Programs Menu   Page: 1 of 3
+────────────────────────────────────────
+1             ADVENT.BAS
+2             BANNER.BAS
+3             CALENDAR.BAS
+4             CHESS.BAS
+5             ELIZA.BAS
+6             GAMES.BAS
+7             HELLO.BAS
+8             LIFE.BAS
+9             LUNAR.BAS
+
+0            Next Page     ---->
+────────────────────────────────────────
+Select Program #? _
+```
+
 
 Basic Programs Menu   Page: 1 of 3
 ────────────────────────────────────────
