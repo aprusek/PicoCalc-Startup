@@ -1,9 +1,10 @@
 ' Startup code
 
+' FLASH OVERWRITE 1
 OPTION AUTORUN 1
 
-PRINT "MMBASIC: "; MM.VER
-PRINT "Running: FLASH 1"
+PRINT "MMBASIC  : "; MM.VER
+PRINT "Running  : FLASH 1"
 PRINT "Launching: B:\AUTO\AUTO.BAS"
 
 DRIVE "B:"
