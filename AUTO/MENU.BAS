@@ -3,7 +3,7 @@ REM MENU.BAS
 DIM A$(99)
 
 '------------------------------------------------------------------
-REM Load the array
+' Load the array
 F$ = DIR$("*.BAS", FILE)
 IF F$="" THEN PRINT "No Files"
 IF F$="" THEN EXIT
@@ -21,7 +21,7 @@ LOOP
 MAXP=INT((N-1)/9)+1
 
 '------------------------------------------------------------------
-REM Sort the array
+' Sort the array
 FOR I = 1 TO N - 1
     FOR J = 1 TO N - I
         IF A$(J) > A$(J + 1) THEN
@@ -90,15 +90,12 @@ FOOTER:
 
   COLOUR RGB(yellow)
   PRINT
-460  PRINT "Select Program #";
+400  PRINT "Select Program #";
   INPUT I
-
-  IF I = 0 THEN RETURN        ' just loop back for next page
-
-  IF I < 0 OR I > 9 THEN PRINT "Invalid" : GOTO 460
-
+  IF I = 0 THEN RETURN        ' just loop back for next pag
+  IF I < 0 OR I > 9 THEN PRINT "Invalid" : GOTO 400
   SEL = (PAGE-1)*9 + I
-  IF SEL > N THEN PRINT "Invalid" : GOTO 460
+  IF SEL > N THEN PRINT "Invalid" : GOTO 400
 
   GOSUB LAUNCH
 
