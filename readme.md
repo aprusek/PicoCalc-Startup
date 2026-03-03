@@ -1,5 +1,5 @@
 # Picocalc MMBASIC Startup
-This document describes the two-stage autorun startup system used on this Picocalc.
+This document describes the three-stage autorun startup system used on this Picocalc.
 ---
 ## Overview
 Startup uses a three-stage approach:
