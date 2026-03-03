@@ -1,14 +1,29 @@
-REM AUTO.BAS
+REM Setup File on SD Card
+
+'------------------------------------------------------------------
+' Setup PicoCalc
+OPTION CASE UPPER
 
 DRIVE "B:"
 CHDIR "\AUTO"
 
-REM Splash Screen and Startup Sound
+'------------------------------------------------------------------
+' Define Function Key to run the MENU
+' OPTION escape was considered but could not find a way tp turn it off
+Q$=CHR$(34)
+L$=CHR$(13)+CHR$(10)
+CMD$="RUN "+Q$+"B:\AUTO\MENU.BAS"+Q$+L$
 
-LOAD PNG "Pico_Math.PNG"
+OPTION F5 CMD$
+
+'------------------------------------------------------------------
+' Display Splah Screen abd play Startup Sound
+LOAD JPG "Pico_Math.JPG"
+PAUSE 200
 PLAY WAV "Picocalc.wav"
 
-REM Neopixels
+'------------------------------------------------------------------
+' Neopixels
 
 delay = 300
 
@@ -37,9 +52,8 @@ FOR i = 1 TO 3
   PAUSE delay
 NEXT i
 
-PRINT "MMBASIC Version:", MM.VER
+'------------------------------------------------------------------
 PRINT "Launching: MENU.BAS"
-PAUSE 1000
 
 DRIVE "B:"
 CHDIR "\BASIC"
